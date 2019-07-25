@@ -5,6 +5,7 @@ ImageEdit is a web service where you can edit a picture. Specifically, you can c
 
 ## file select
 You need to upload a picture (png or jpeg) to this website by dropping a image file on it or selecting a image file from your conputer.
+
 ![demo](https://github.com/KengoShimizu/ImageEdit/blob/master/file_select.mov.gif)
 
 ## change rgba values
