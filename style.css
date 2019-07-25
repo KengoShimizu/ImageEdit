@@ -1,0 +1,165 @@
+html,
+body{
+	height: 100%;
+}
+
+body{
+	display: flex;
+	flex-direction: column;
+}
+
+main{
+	flex: 1;
+}
+
+h1{
+	height: 60px;
+	padding-bottom: 10px;
+	border-bottom: gray solid 1px;
+}
+
+footer{
+	width: 100px;
+	height: 60px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.dandd{
+	position: relative;
+}
+
+#draganddrop{
+	height: 500px;
+	width: 450px;
+	margin: 0 auto;
+	border: black double;
+	outline: gray dotted;
+  	outline-offset: -15px;
+}
+
+#draganddrop_text{
+	user-select: none;
+	color: black;
+	position: absolute;
+	top: 50%;
+  	left: 50%;
+  	transform: translateY(-50%) translateX(-50%);
+  	-webkit- transform: translateY(-50%) translateX(-50%);
+  	margin: auto;
+  	text-align: center;
+}
+
+#fileimg{
+	opacity: 0.3;
+	position: absolute;
+	top: 50%;
+  	left: 50%;
+  	transform: translateY(-50%) translateX(-50%);
+  	-webkit- transform: translateY(-50%) translateX(-50%);
+  	margin: auto;
+  	text-align: center;
+}
+
+#filelabel{
+	border-radius: 5px;
+	border: black solid 1px;
+	font-size: 15px;
+	padding: 5px 5px;
+	background-color: white;
+}
+
+.editdisplay{
+	text-align: center;
+}
+
+.inline-block{
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.edititems{
+}
+
+#upimg{
+	margin-right: 100px;
+	outline: gray solid;
+  	outline-offset: 15px;
+}
+
+.rgbnum{
+	width: 50px;
+}
+
+#pen{
+	cursor: pointer;
+	border-radius: 3px;
+	border: solid 1px;
+}
+
+.modal {
+	max-height: 800px;
+	max-width: 1000px;
+	min-width: 400px;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	z-index: 2;
+	text-align: center;
+	background: #fff;
+	padding: 30px;
+}
+ 
+.modal-overlay{
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 120%;
+	background-color: rgba(0,0,0,0.65);
+	z-index: 1;
+}
+ 
+.modal-open,
+.modal-close{
+	cursor: pointer;
+}
+
+.menuicon{
+	display: inline-block;
+	height: 20px;
+	width: 20px;
+	border-radius: 15px;
+	cursor: pointer;
+	font-size: 14px;
+	vertical-align: middle;
+}
+
+#adjust{
+	width: 100px;
+}
+
+#hiddenalpha{
+	position: relative;
+}
+
+.hial{
+	position: absolute;
+	height: 20px;
+	width: 20px;
+	border-radius: 15px;
+	cursor: pointer;
+	font-size: 14px;
+}
+
+#save {
+	user-select: none;
+	cursor: pointer;
+}
+
+
+
+
+

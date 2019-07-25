@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Title</title>
+    <link href="style.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <header>
+      <h1 class="branding">画像編集サービス</h1>
+    </header>
+
+    <main>
+      <section class="description" hidden>
+        <button id="start">はじめる</button>
+      </section>
+
+      <section class="uploaddisplay">
+        <div class="dandd">
+          <div class="dragspace" id="draganddrop"></div>
+          <div>
+            <img class="dragspace" src="img/file.png" id="fileimg">
+          </div>
+          <div class="dragspace" id="draganddrop_text">
+            画像ファイルをドロップ<br>
+            または<br>
+            <input class="dragspace" id="file_photo" type="file" name="image" accept= "image/png, image/jpeg" hidden>
+            <label for="file_photo" id="filelabel">ファイルを選択</label>
+          </div>
+        </div>
+      </section>
+
+      <section class="editdisplay" hidden>
+        <img id="upimg" class="inline-block" draggable="false">
+        <div class="edititems inline-block">
+          R <input id="rrange" type="range" min="-255" max="255" step="1">
+          <input type="number" id="rnum" class="rgbnum" value="0" min="-255" max="255">
+          <br>
+          G <input id="grange" type="range" min="-255" max="255" step="1">
+          <input type="number" id="gnum" class="rgbnum" value="0"  min="-255" max="255">
+          <br>
+          B <input id="brange" type="range" min="-255" max="255" step="1">
+          <input type="number" id="bnum" class="rgbnum" value="0"  min="-255" max="255">
+          <br>
+          A <input id="arange" type="range" min="0" max="255" step="1" value="0">
+          <input type="number" id="anum" class="rgbnum" value="0"  min="0" max="255">
+          <br>
+
+          <br>
+          <img src="img/pencil-shirokuro.png" id="pen" width="30px" height="30px">
+          <div class="modal" hidden>
+            <canvas id="myCanvas"></canvas>
+            <div id="canvasmenu">
+              <a class="modal-close menuicon" draggable="false" id="adjust">適応する</a>
+              <div class="menuicon" id="clear" style="border:solid 1px">×</div>
+              <div class="menuicon" id="e91e63" style="background-color:#e91e63"></div>
+              <div class="menuicon" id="ffeb3b" style="background-color:#ffeb3b"></div>
+              <div class="menuicon" id="ff4801" style="background-color:#ff4801"></div>
+              <div class="menuicon" id="536dfe" style="background-color:#536dfe"></div>
+              <div class="menuicon" id="009688" style="background-color:#009688"></div>
+              <div class="menuicon" id="00e676" style="background-color:#00e676"></div>
+              <div class="menuicon" id="555555" style="background-color:#555555"></div>
+              <div class="menuicon" id="FFFFFF" style="background-color:#FFFFFF; border:solid 1px"></div>
+              <!--
+              <div class="menuicon" id="alpha" style="border:solid 1px">透</div>
+              <div id="hiddenalpha" hidden>
+                <div class="hial" id="alpha1" style="border:solid 1px">透</div>
+                <div class="hial" id="alpha2" style="border:solid 1px">透</div>
+                <div class="hial" id="alpha3" style="border:solid 1px">透</div>
+              </div>
+              <div class="menuicon" id="size" style="border:solid 1px">太</div>
+               -->
+            </div>
+          </div>
+          <br>
+          <br>
+          <a href="" download="" draggable="false" id="save">保存する</a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p draggable="false">&copy; Kengo</p>
+    </footer>
+    <script src="jquery.min.js" type="text/javascript"></script>
+    <script src="main.js" type="text/javascript"></script>
+  </body>
+</html>
