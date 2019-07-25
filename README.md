@@ -3,17 +3,18 @@ ImageEdit is a web service where you can edit a picture. Specifically, you can c
 
 # points that I worked out
 
-## menu bar on the left
-The menu bar is implemented and it displays games that are sorted based on the initial character. Also the sort can be done by clicking the name of games on the thread.
-![demo](https://github.com/KengoShimizu/website/blob/master/sort.mov.gif)
-![demo](https://github.com/KengoShimizu/website/blob/master/sort2.mov.gif)
+## file select
+You need to upload a picture (png or jpeg) to this website by dropping a image file on it or selecting a image file from your conputer.
+![demo](https://github.com/KengoShimizu/ImageEdit/tree/master/file_select.mov.gif)
 
-## shrink the image
-This website has a feature that you can upload a image and when it downloads a image from client side to server side, the image is shrinked to 500px at maximum so that the server could save some memories.  
+## change rgba values
+You can edit your picture by adjusting those numbers.
+![demo](https://github.com/KengoShimizu/ImageEdit/tree/master/rgb_edit.mov.gif) 
 
-## display in time line
-The thread is displayed in time line from the top.
-![demo](https://github.com/KengoShimizu/website/blob/master/timeline.mov.gif)
+## draw something
+You can draw something you like on your picture and there are some colors you can choose and there is a clear button. Only if you click the apply button, the doodle you drew is applied to the picture. If you click the spcase that is not on the canvas window, this window will disappear.
+![demo](https://github.com/KengoShimizu/ImageEdit/tree/master/draw_edit.mov.gif)
 
-## confirm display
-There is a confirmation display when you try to upload your opinion.
+## save
+You can save the picture you edited by pressing a save button. The file name is always "edited.png". 
+![demo](https://github.com/KengoShimizu/ImageEdit/tree/master/save.mov.gif)
